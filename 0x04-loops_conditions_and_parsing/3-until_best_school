@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#Bash Script that displays best school 10x
+
+school=1
+until [ "$school" -gt 10 ]
+do
+	echo "Best School"
+	school=$(( school+1 ))
+done
