@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#Bash Script that displays Best School 10x
+
+school=1
+while [ "$school" -le 10 ]
+do
+	if (( school==4 ))
+	then
+		echo "bad luck"
+	elif (( school==8 ))
+	then
+		echo "good luck"
+	else
+		echo "Best School"
+	fi
+	school=$(( school+1 ))
+done
