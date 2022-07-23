@@ -1,2 +1,14 @@
 #!/usr/bin/env bash
+: '
+Bash Script that displays Best School 10x but for the 9th iteration, displays Best School then Hi on a new line '
 
+school=1
+while [ "$school" -le 10 ]
+do
+	if (( school==10 ))
+	then
+		echo "Hi"
+	fi
+	echo "Best School"	
+	school=$(( school+1 ))
+done
