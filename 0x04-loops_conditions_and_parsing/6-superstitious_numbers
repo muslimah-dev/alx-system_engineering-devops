@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+#Bash Script that displays Best School 10x
+
+school=1
+while [ "$school" -le 20 ]
+do
+	if (( school==4 ))
+	then
+		echo -e "4\nbad luck from China"
+	elif (( school==9 ))
+	then
+		echo -e "9\nbad luck from Japan"
+	elif (( school==17 ))
+        then
+                echo -e "17\nbad luck from Italy"	
+	else
+		echo "$school"
+	fi
+	school=$(( school+1 ))
+done
