@@ -4,17 +4,16 @@
 school=1
 while [ "$school" -le 20 ]
 do
-	if (( school==4 ))
-	then
-		echo -e "4\nbad luck from China"
-	elif (( school==9 ))
-	then
-		echo -e "9\nbad luck from Japan"
-	elif (( school==17 ))
-        then
-                echo -e "17\nbad luck from Italy"	
-	else
-		echo "$school"
-	fi
+	case $school in
+
+		4)
+		echo -e "4\nbad luck from China";;
+		9)
+		echo -e "9\nbad luck from Japan";;
+		17)
+		echo -e "17\nbad luck from Italy";;
+		*)
+			echo "$school"
+	esac
 	school=$(( school+1 ))
 done
